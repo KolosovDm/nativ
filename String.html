@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>String</title>
+	<script src="./script.js"></script>
+</head>
+<body>
+<h1>Введите текст</h1>
+<div id="text" contenteditable style = 'width: 300px; height: 200px; background-color:#cccccc;  padding: 5px; margin-bottom: 15px'></div>
+<input type="button" value = 'Получить код' onclick = 'getCode()'>
+<div id="code"></div>
+<script>
+ function getCode(){
+	var inpText = '';
+	var inpText = document.getElementById("text").innerHTML;
+	document.getElementById('code').innerHTML = inpText.code(); 
+ }
+</script>
+</body>
+</html>
